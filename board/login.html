@@ -18,7 +18,7 @@
     /*border 있는게 css할 때 편해서 들어있는거라 없애셔도 됩니다 안없애셔두 돼요!*/
     /*wrapper container main height 수정해서 작업해주세요!*/
     #wrapper {
-        width :1920px;
+        width : 100%;
         height : 775px;
         box-sizing: border-box;
         margin : 0 auto;
@@ -40,6 +40,9 @@
         font-size : 15px;
 
     }
+
+    /******************************* main *******************************/
+
     main {
         width : 100%;
         height :585px;
@@ -47,13 +50,14 @@
     }
 
     main > section {
-        width: 100%;
-        height: 585px;
+        width: 360px;
+        height: 222px;
+        border: 1px solid #cfded8;
+        box-sizing: border-box;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        
     }
 
     table {
@@ -65,17 +69,16 @@
     img {
         width: 20px;
         height: 17px;
-        top: 4px;
         margin-right: 5px;
     }
 
     .input {
         width: 164px;
         height: 24px;
-        left: 26px;
         border: 1px solid #e4eaec;
         box-sizing: border-box;
         background-color: #f7f7f7;
+        color: gray;
     }
 
     .guide {
@@ -85,10 +88,7 @@
         box-sizing: border-box;
         background-color: #f5f6fa;
         position: absolute;
-        top: 117px;
-        left: 1px;
-
-        position: relative;
+        top: 116px;
     }
 
     .guide > h3 {position: absolute; top: 20px; left: 22px; font-weight: bold;}
@@ -103,9 +103,11 @@
         position: absolute;
         top: 31px;
         left: 249px;
-        margin-left: 5px;
+        margin-left: 3px;
         font-weight: bold;
     }
+
+    /******************************* footer *******************************/
 
     footer {
         width : 100%;
@@ -137,18 +139,18 @@
                         <table>
                             <tr>
                                 <td>
-                                    <img src="images/login_ico_id.png" alt="아이디">
+                                    <img src="img/login_ico_id.png" alt="아이디">
                                 </td>
                                 <td>
-                                    <input type="text" value="아이디 입력" class="input">
+                                    <input type="text" placeholder="아이디 입력" class="input">
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="images/login_ico_pw.png" alt="비밀번호">
+                                    <img src="img/login_ico_pw.png" alt="비밀번호">
                                 </td>
                                 <td>
-                                    <input type="text" value="비밀번호 입력" class="input">
+                                    <input type="text" placeholder="비밀번호 입력" class="input">
                                 </td>
                             </tr>
                         </table>
@@ -158,7 +160,7 @@
                 <div class="guide">
                     <h3>회원 로그인 안내</h3>
                     <p>아직 회원이 아니시면 회원으로 가입하세요.</p>
-                    <a href="https://www.naver.com/">아이디 | 비밀번호찾기 | 회원가입</a>
+                    <a href="#">아이디 | 비밀번호찾기 | 회원가입</a>
                 </div>
 
                 <div>
